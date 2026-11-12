@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /* --- Variables y Paleta Spider-Man --- */
+            :root {
+                --spider-red: #e62429;
+                --spider-red-glow: rgba(230, 36, 41, 0.35);
+                --spider-blue: #0284c7;
+                --spider-blue-dark: #0369a1;
+                --bg-dark: #0a0d14;
+                --bg-card: #111827;
+                --text-light: #f3f4f6;
+                --text-muted: #9ca3af;
+                --border-subtle: #1f2937;
+            }
+
+            /* --- Reseteo básico --- */
+            *, *::before, *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: var(--bg-dark);
+                color: var(--text-light);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                line-height: 1.7;
+                padding: 20px 10px;
+            }
+
+            /* --- Header & Navegación --- */
+            header {
+                max-width: 860px;
+                margin: 0 auto 30px auto;
+                background-color: var(--bg-card);
+                border: 2px solid var(--spider-red);
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 4px 20px var(--spider-red-glow);
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+
+            nav ul li a {
+                display: inline-block;
+                color: var(--text-light);
+                text-decoration: none;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 0.95rem;
+                padding: 8px 18px;
+                border-radius: 6px;
+                border: 1px solid var(--border-subtle);
+                background-color: rgba(255, 255, 255, 0.03);
+                transition: all 0.25s ease;
+            }
+
+            nav ul li a:hover {
+                background-color: var(--spider-blue);
+                border-color: var(--spider-blue);
+                color: #ffffff;
+                box-shadow: 0 0 12px rgba(2, 132, 199, 0.5);
+                transform: translateY(-2px);
+            }
+
+            /* --- Contenedor Principal --- */
+            main {
+                max-width: 860px;
+                margin: 0 auto;
+            }
+
+            /* --- Artículo (Tarjeta de contenido) --- */
+            article {
+                background-color: var(--bg-card);
+                border: 1px solid var(--border-subtle);
+                border-left: 5px solid var(--spider-red);
+                border-radius: 12px;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            }
+
+            article h2 {
+                color: #ffffff;
+                font-size: 1.75rem;
+                font-weight: 800;
+                letter-spacing: -0.5px;
+                margin-bottom: 18px;
+                border-bottom: 2px solid var(--border-subtle);
+                padding-bottom: 12px;
+            }
+
+            article p {
+                font-size: 1.05rem;
+                color: var(--text-muted);
+                margin-bottom: 25px;
+                text-align: justify;
+            }
+
+            /* --- Imagen y Contenedores Multimedia --- */
+            figure {
+                margin: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            picture {
+                display: block;
+                width: 100%;
+                max-width: 650px;
+            }
+
+            picture img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+                border: 2px solid var(--border-subtle);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+                transition: border-color 0.3s ease, transform 0.3s ease;
+            }
+
+            picture img:hover {
+                border-color: var(--spider-blue);
+                transform: scale(1.01);
+            }
+
+            /* --- Aside (Preparado con el estilo por si añades la etiqueta) --- */
+            aside {
+                background-color: rgba(2, 132, 199, 0.08);
+                border: 1px dashed var(--spider-blue);
+                border-radius: 8px;
+                padding: 15px 20px;
+                margin: 20px 0;
+            }
+
+            /* --- Footer --- */
+            footer {
+                max-width: 860px;
+                margin: 40px auto 10px auto;
+                text-align: center;
+                padding: 20px;
+                border-top: 1px solid var(--border-subtle);
+                color: var(--text-muted);
+                font-size: 0.9rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#Games">Games</a></li>
+                    <li><a href="#Suits">Suits</a></li>
+                    <li><a href="#Villain">Villain</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h2>The why Spider-Man is my favorite Super Heroes</h2>
+                <p>Spider-Man is one of the best superhero of the history and the favorite of a lot of people, not only my. I love Spider-Man because he is not just a superhero; he is also Peter Parker it means that he has two lives and two responsibilities. As Spider-Man, he has the responsibility of defending New York City, fighting powerful enemies, and saving the lives of people in danger each day. But as Peter Parker, he has to take care of his family, and also keep up with his job and university at the same time. So I admire him for all that and also because, as a superhero, he is amazing and unique; who would think that a man with spider abilities could be that amazing?</p>
+                <figure>
+                    <picture>
+                        <source media="(min-width: 768px)" src="images%20(2).jpeg">
+                        <img src="images%20(2).jpeg" alt="Spider-Man kissing MJ">
+                    </picture>
+                </figure>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 CPDW - Spider-Man Web Page.</p>
+        </footer>
+    </body>
+</html>

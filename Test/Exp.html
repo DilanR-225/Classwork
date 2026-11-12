@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dilan | Personal Web Page</title>
+
+    <style>
+        /* ---------- General ---------- */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f4f6f8;
+        }
+
+        /* ---------- Header ---------- */
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            text-align: center;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* ---------- Breadcrumb Navigation ---------- */
+
+        nav {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .crumbs ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .crumb a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .crumb:not(:last-child)::after {
+            content: "›";
+            margin-left: 8px;
+            color: #bfdbfe;
+        }
+
+        /* ---------- Main Content ---------- */
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+        }
+
+        article,
+        aside {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        article h2,
+        aside h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        article p,
+        aside p {
+            margin-bottom: 15px;
+        }
+
+        /* ---------- Skills ---------- */
+
+        .skills {
+            margin-top: 25px;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skills li {
+            background-color: #dbeafe;
+            color: #1e3a8a;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* ---------- Footer ---------- */
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* ---------- Responsive Design ---------- */
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+                margin-top: 25px;
+            }
+
+            .crumbs ol {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .crumb:not(:last-child)::after {
+                content: "";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+            <li class="crumb">
+                <a href="#">History</a>
+            </li>
+
+            <li class="crumb">
+                <a href="#">Achievements</a>
+            </li>
+
+            <li class="crumb">
+                Resume
+            </li>
+        </ol>
+    </nav>
+
+    <h1>A Web Page About Dilan</h1>
+    <p>Welcome to my personal webpage</p>
+
+</header>
+
+
+<main>
+
+    <article>
+        <h2>About Dilan</h2>
+
+        <p>
+            Hello! My name is Dilan. Welcome to my personal webpage.
+            This page contains information about my history, achievements,
+            skills, and experience.
+        </p>
+
+        <p>
+            I am interested in learning new things, developing my skills,
+            and working on interesting projects.
+        </p>
+
+        <section class="skills">
+            <h2>My Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Web Design</li>
+            </ul>
+        </section>
+    </article>
+
+
+    <aside>
+        <h2>Quick Information</h2>
+
+        <p><strong>Name:</strong> Dilan</p>
+        <p><strong>Interest:</strong> Web Development</p>
+        <p><strong>Goal:</strong> Build great websites</p>
+
+        <h2>Contact</h2>
+
+        <p>
+            You can add your email or social media information here.
+        </p>
+    </aside>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 Dilan. All rights reserved.</p>
+    <p>My Personal Webpage</p>
+</footer>
+
+</body>
+</html>
